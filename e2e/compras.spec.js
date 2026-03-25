@@ -18,7 +18,7 @@ describe('Regressiovo E2E - Bressan K2', () => {
 
   it('Cenário 1 - Deve cadastrar usuário com email aleatório', () => {
     cy.get('[data-testid="cadastrar"]').click()
-    cy.get('input[name="nome"]').type('randomName)
+    cy.get('input[name="nome"]').type(randomName)
     cy.get('input[name="email"]').type(padronEmail)
     cy.get('input[name="password"]').type(randomPadronPassword)
     cy.get('button[type="submit"]').click()
